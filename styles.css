@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  position: relative;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-list {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 30px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #666666c9;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-list li.active {
+  color: #000 !important;
+}
+
+@media (hover: hover) {
+  .nav-list li:hover {
+    color: rgb(0, 174, 255);
+  }
+}
+
+.horizontal-line-container {
+  position: relative;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0;
+  width: 100%;
+}
+
+
+.slider {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  font-family: system-ui;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+#city-name {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#city-time {
+  font-size: 24px;
+  color: #666666c9;
+}
+
+/* Responsive Design for Tablet */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .nav-list li {
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  #city-name {
+    font-size: 28px;
+  }
+
+  #city-time {
+    font-size: 20px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .nav-list li {
+    margin: 0 8px;
+    font-size: 12px; 
+    padding: 8px 0;
+  }
+
+  .horizontal-line-container{
+    width: 124%;
+  }
+
+  hr{
+    height: 1px;
+  }
+
+  #city-name {
+    font-size: 24px;
+  }
+
+  #city-time {
+    font-size: 18px;
+  }
+}
