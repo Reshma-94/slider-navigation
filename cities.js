@@ -71,7 +71,7 @@ fetch('navigation.json')
 window.addEventListener('resize', () => {
     const activeCity = navList.querySelector('li.active');
     if(activeCity){
-        updateSlider(activeCity.textContent);
+        updateSlider(activeCity);
     }
 })
 
