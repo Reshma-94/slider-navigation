@@ -10,6 +10,10 @@ On resize, sliding bar updates its position and size to match the text.<br/>
 # Technologies Used
 HTML, CSS, Vanilla javascript<br />
 
+# Screenshot
+![image](https://github.com/user-attachments/assets/06f76170-80e3-4239-957e-9b004f95ad3c)
+
+
 
 
 
