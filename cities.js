@@ -2,6 +2,7 @@ const navList = document.querySelector('.nav-list');
 const slider = document.querySelector('.slider');
 const cityName = document.querySelector('#city-name');
 const cityTime = document.querySelector('#city-time');
+const cityDescription = document.querySelector("#city-description");
 
 const timeZones = {
     "Cupertino": "America/Los_Angeles",
@@ -12,6 +13,16 @@ const timeZones = {
     "Hong Kong": "Asia/Hong_Kong",
     "Sydney": "Australia/Sydney"
 }
+
+const cityDescriptions = {
+    "Cupertino": "Cupertino is a city in California, home to Apple Inc. and known for its tech industry.",
+    "New York City": "New York City is the largest city in the USA, famous for its skyscrapers, Broadway, and Central Park.",
+    "London": "London is the capital of England, known for its rich history, the Thames River, and iconic landmarks like Big Ben.",
+    "Amsterdam": "Amsterdam is the capital of the Netherlands, famous for its canals, museums, and vibrant culture.",
+    "Tokyo": "Tokyo is the capital of Japan, known for its modern technology, traditional temples, and bustling streets.",
+    "Hong Kong": "Hong Kong is a vibrant city in China, known for its skyline, shopping, and cultural diversity.",
+    "Sydney": "Sydney is the largest city in Australia, famous for its Opera House, Harbour Bridge, and beaches."
+  };
 
 function updateSlider(activeItem){
     const { offsetLeft, offsetWidth } = activeItem;
@@ -25,6 +36,7 @@ function updateCityTime(city){
         const time = new Date().toLocaleTimeString('en-US', {timeZone, hour:'2-digit', minute:'2-digit', second:'2-digit'})
         cityName.textContent = city;
         cityTime.textContent = time;
+        cityDescription.textContent = cityDescriptions[city];
     }
 }
 
