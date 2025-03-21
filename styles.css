@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: white;
   color: #333;
 }
 
@@ -76,16 +76,39 @@ hr {
 
 .content {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.city-card {
+  background-color: #79bcb5d4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+.city-card-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #city-name {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 10px;
+  color: #333;
 }
 
 #city-time {
-  font-size: 24px;
-  color: #666666c9;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#city-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
 }
 
 /* Responsive Design for Tablet */
@@ -131,10 +154,10 @@ hr {
   }
 
   #city-name {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #city-time {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
